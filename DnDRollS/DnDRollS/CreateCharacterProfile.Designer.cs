@@ -32,10 +32,10 @@
             this.uxStrengthModValue = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.uxStrengthBox = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.uxSavingThrowModValue = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
             this.uxBaseStrength = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.uxSavingThrowModValue = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
             this.uxDexBox = new System.Windows.Forms.GroupBox();
             this.uxBaseDex = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
@@ -73,19 +73,19 @@
             this.uxCharismaModValue = new System.Windows.Forms.NumericUpDown();
             this.uxCreateButton = new System.Windows.Forms.Button();
             this.uxCharacterBox = new System.Windows.Forms.GroupBox();
-            this.uxProficiencyValue = new System.Windows.Forms.NumericUpDown();
-            this.uxInitiativeValue = new System.Windows.Forms.NumericUpDown();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.uxCharacterName = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.uxInitiativeValue = new System.Windows.Forms.NumericUpDown();
+            this.uxProficiencyValue = new System.Windows.Forms.NumericUpDown();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.uxProficiencyChecklist = new System.Windows.Forms.CheckedListBox();
             this.uxSelectProficiencies = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.uxStrengthModValue)).BeginInit();
             this.uxStrengthBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uxSavingThrowModValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxBaseStrength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uxSavingThrowModValue)).BeginInit();
             this.uxDexBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uxBaseDex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxDexSavingThrowModValue)).BeginInit();
@@ -107,8 +107,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.uxCharismaSavingThrowModValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxCharismaModValue)).BeginInit();
             this.uxCharacterBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uxProficiencyValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxInitiativeValue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uxProficiencyValue)).BeginInit();
             this.uxSelectProficiencies.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -138,7 +138,7 @@
             this.uxStrengthModValue.Name = "uxStrengthModValue";
             this.uxStrengthModValue.Size = new System.Drawing.Size(41, 19);
             this.uxStrengthModValue.TabIndex = 1;
-            this.uxStrengthModValue.Tag = "Strength_Modifier:";
+            this.uxStrengthModValue.Tag = "Strength_Modifier";
             // 
             // label1
             // 
@@ -165,14 +165,27 @@
             this.uxStrengthBox.TabStop = false;
             this.uxStrengthBox.Text = "Strength";
             // 
-            // label2
+            // uxBaseStrength
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 46);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 12);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Strength Saving Throw Modifier ";
+            this.uxBaseStrength.Location = new System.Drawing.Point(99, 71);
+            this.uxBaseStrength.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.uxBaseStrength.Name = "uxBaseStrength";
+            this.uxBaseStrength.Size = new System.Drawing.Size(38, 19);
+            this.uxBaseStrength.TabIndex = 9;
+            this.uxBaseStrength.Tag = "Base_Strength";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 12);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Base Strength Stat";
             // 
             // uxSavingThrowModValue
             // 
@@ -190,29 +203,16 @@
             this.uxSavingThrowModValue.Name = "uxSavingThrowModValue";
             this.uxSavingThrowModValue.Size = new System.Drawing.Size(42, 19);
             this.uxSavingThrowModValue.TabIndex = 7;
-            this.uxSavingThrowModValue.Tag = "Strength_Saving_Throw_Modifier:";
+            this.uxSavingThrowModValue.Tag = "Strength_Saving_Throw_Modifier";
             // 
-            // label3
+            // label2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 73);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 12);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Base Strength Stat";
-            // 
-            // uxBaseStrength
-            // 
-            this.uxBaseStrength.Location = new System.Drawing.Point(99, 71);
-            this.uxBaseStrength.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.uxBaseStrength.Name = "uxBaseStrength";
-            this.uxBaseStrength.Size = new System.Drawing.Size(38, 19);
-            this.uxBaseStrength.TabIndex = 9;
-            this.uxBaseStrength.Tag = "Base_Strength:";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(153, 12);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Strength Saving Throw Modifier ";
             // 
             // uxDexBox
             // 
@@ -241,7 +241,7 @@
             this.uxBaseDex.Name = "uxBaseDex";
             this.uxBaseDex.Size = new System.Drawing.Size(38, 19);
             this.uxBaseDex.TabIndex = 9;
-            this.uxBaseDex.Tag = "Base_Dexterity:";
+            this.uxBaseDex.Tag = "Base_Dexterity";
             // 
             // label4
             // 
@@ -268,7 +268,7 @@
             this.uxDexSavingThrowModValue.Name = "uxDexSavingThrowModValue";
             this.uxDexSavingThrowModValue.Size = new System.Drawing.Size(42, 19);
             this.uxDexSavingThrowModValue.TabIndex = 7;
-            this.uxDexSavingThrowModValue.Tag = "Dexterity_Saving_Throw_Modifier:";
+            this.uxDexSavingThrowModValue.Tag = "Dexterity_Saving_Throw_Modifier";
             // 
             // label5
             // 
@@ -304,7 +304,7 @@
             this.uxDexModValue.Name = "uxDexModValue";
             this.uxDexModValue.Size = new System.Drawing.Size(41, 19);
             this.uxDexModValue.TabIndex = 1;
-            this.uxDexModValue.Tag = "Dexterity_Modifier:";
+            this.uxDexModValue.Tag = "Dexterity_Modifier";
             // 
             // uxConstitutionBox
             // 
@@ -333,6 +333,7 @@
             this.uxBaseCon.Name = "uxBaseCon";
             this.uxBaseCon.Size = new System.Drawing.Size(38, 19);
             this.uxBaseCon.TabIndex = 9;
+            this.uxBaseCon.Tag = "Base_Constitution";
             // 
             // label7
             // 
@@ -359,6 +360,7 @@
             this.uxConSavingThrowModValue.Name = "uxConSavingThrowModValue";
             this.uxConSavingThrowModValue.Size = new System.Drawing.Size(42, 19);
             this.uxConSavingThrowModValue.TabIndex = 7;
+            this.uxConSavingThrowModValue.Tag = "Constitution_Saving_Throw_Modifier";
             // 
             // label8
             // 
@@ -394,7 +396,7 @@
             this.uxConModValue.Name = "uxConModValue";
             this.uxConModValue.Size = new System.Drawing.Size(41, 19);
             this.uxConModValue.TabIndex = 1;
-            this.uxConModValue.Tag = "Constitution_Modifier:";
+            this.uxConModValue.Tag = "Constitution_Modifier";
             // 
             // uxIntBox
             // 
@@ -423,6 +425,7 @@
             this.uxBaseInt.Name = "uxBaseInt";
             this.uxBaseInt.Size = new System.Drawing.Size(38, 19);
             this.uxBaseInt.TabIndex = 9;
+            this.uxBaseInt.Tag = "Base_Intelligence";
             // 
             // label10
             // 
@@ -449,6 +452,7 @@
             this.uxIntSavingThrowModValue.Name = "uxIntSavingThrowModValue";
             this.uxIntSavingThrowModValue.Size = new System.Drawing.Size(42, 19);
             this.uxIntSavingThrowModValue.TabIndex = 7;
+            this.uxIntSavingThrowModValue.Tag = "Intelligence_Saving_Throw_Modifier";
             // 
             // label11
             // 
@@ -484,6 +488,7 @@
             this.uxIntModValue.Name = "uxIntModValue";
             this.uxIntModValue.Size = new System.Drawing.Size(41, 19);
             this.uxIntModValue.TabIndex = 1;
+            this.uxIntModValue.Tag = "Intelligence_Modifier";
             // 
             // uxWisdomBox
             // 
@@ -512,6 +517,7 @@
             this.uxBaseWisdom.Name = "uxBaseWisdom";
             this.uxBaseWisdom.Size = new System.Drawing.Size(38, 19);
             this.uxBaseWisdom.TabIndex = 9;
+            this.uxBaseWisdom.Tag = "Base_Wisdom";
             // 
             // label13
             // 
@@ -538,6 +544,7 @@
             this.uxWisdomSavingThrowModValue.Name = "uxWisdomSavingThrowModValue";
             this.uxWisdomSavingThrowModValue.Size = new System.Drawing.Size(42, 19);
             this.uxWisdomSavingThrowModValue.TabIndex = 7;
+            this.uxWisdomSavingThrowModValue.Tag = "Wisdom_Saving_Throw_Modifier";
             // 
             // label14
             // 
@@ -573,6 +580,7 @@
             this.uxWisdomModValue.Name = "uxWisdomModValue";
             this.uxWisdomModValue.Size = new System.Drawing.Size(41, 19);
             this.uxWisdomModValue.TabIndex = 1;
+            this.uxWisdomModValue.Tag = "Wisdom_Modifier";
             // 
             // uxCharismaBox
             // 
@@ -601,6 +609,7 @@
             this.uxBaseCharisma.Name = "uxBaseCharisma";
             this.uxBaseCharisma.Size = new System.Drawing.Size(38, 19);
             this.uxBaseCharisma.TabIndex = 9;
+            this.uxBaseCharisma.Tag = "Base_Charisma";
             // 
             // label16
             // 
@@ -627,6 +636,7 @@
             this.uxCharismaSavingThrowModValue.Name = "uxCharismaSavingThrowModValue";
             this.uxCharismaSavingThrowModValue.Size = new System.Drawing.Size(42, 19);
             this.uxCharismaSavingThrowModValue.TabIndex = 7;
+            this.uxCharismaSavingThrowModValue.Tag = "Charisma_Saving_Throw_Modifier";
             // 
             // label17
             // 
@@ -662,6 +672,7 @@
             this.uxCharismaModValue.Name = "uxCharismaModValue";
             this.uxCharismaModValue.Size = new System.Drawing.Size(41, 19);
             this.uxCharismaModValue.TabIndex = 1;
+            this.uxCharismaModValue.Tag = "Charisma_Modifier";
             // 
             // uxCreateButton
             // 
@@ -689,22 +700,40 @@
             this.uxCharacterBox.TabStop = false;
             this.uxCharacterBox.Text = "Character Stats";
             // 
-            // uxProficiencyValue
+            // uxCharacterName
             // 
-            this.uxProficiencyValue.Location = new System.Drawing.Point(111, 26);
-            this.uxProficiencyValue.Maximum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            0});
-            this.uxProficiencyValue.Minimum = new decimal(new int[] {
-            15,
-            0,
-            0,
-            -2147483648});
-            this.uxProficiencyValue.Name = "uxProficiencyValue";
-            this.uxProficiencyValue.Size = new System.Drawing.Size(42, 20);
-            this.uxProficiencyValue.TabIndex = 12;
+            this.uxCharacterName.Location = new System.Drawing.Point(96, 76);
+            this.uxCharacterName.Name = "uxCharacterName";
+            this.uxCharacterName.Size = new System.Drawing.Size(143, 20);
+            this.uxCharacterName.TabIndex = 16;
+            this.uxCharacterName.Tag = "Character_Name";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(6, 79);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(84, 13);
+            this.label21.TabIndex = 15;
+            this.label21.Text = "Character Name";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(6, 54);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(86, 13);
+            this.label20.TabIndex = 14;
+            this.label20.Text = "Initiative Modifier";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(6, 28);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(99, 13);
+            this.label19.TabIndex = 13;
+            this.label19.Text = "Proficiency Modifier";
             // 
             // uxInitiativeValue
             // 
@@ -722,40 +751,25 @@
             this.uxInitiativeValue.Name = "uxInitiativeValue";
             this.uxInitiativeValue.Size = new System.Drawing.Size(42, 20);
             this.uxInitiativeValue.TabIndex = 12;
+            this.uxInitiativeValue.Tag = "Initiative_Modifier";
             // 
-            // label19
+            // uxProficiencyValue
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 28);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(99, 13);
-            this.label19.TabIndex = 13;
-            this.label19.Text = "Proficiency Modifier";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 54);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(86, 13);
-            this.label20.TabIndex = 14;
-            this.label20.Text = "Initiative Modifier";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 79);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(84, 13);
-            this.label21.TabIndex = 15;
-            this.label21.Text = "Character Name";
-            // 
-            // uxCharacterName
-            // 
-            this.uxCharacterName.Location = new System.Drawing.Point(96, 76);
-            this.uxCharacterName.Name = "uxCharacterName";
-            this.uxCharacterName.Size = new System.Drawing.Size(143, 20);
-            this.uxCharacterName.TabIndex = 16;
+            this.uxProficiencyValue.Location = new System.Drawing.Point(111, 26);
+            this.uxProficiencyValue.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
+            this.uxProficiencyValue.Minimum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            -2147483648});
+            this.uxProficiencyValue.Name = "uxProficiencyValue";
+            this.uxProficiencyValue.Size = new System.Drawing.Size(42, 20);
+            this.uxProficiencyValue.TabIndex = 12;
+            this.uxProficiencyValue.Tag = "Proficiency_Modifier";
             // 
             // uxProficiencyChecklist
             // 
@@ -804,8 +818,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.uxStrengthModValue)).EndInit();
             this.uxStrengthBox.ResumeLayout(false);
             this.uxStrengthBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uxSavingThrowModValue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxBaseStrength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uxSavingThrowModValue)).EndInit();
             this.uxDexBox.ResumeLayout(false);
             this.uxDexBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uxBaseDex)).EndInit();
@@ -833,8 +847,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.uxCharismaModValue)).EndInit();
             this.uxCharacterBox.ResumeLayout(false);
             this.uxCharacterBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uxProficiencyValue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxInitiativeValue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uxProficiencyValue)).EndInit();
             this.uxSelectProficiencies.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

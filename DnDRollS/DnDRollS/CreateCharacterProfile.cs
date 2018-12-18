@@ -12,32 +12,77 @@ namespace DnDRollS
 {
     public partial class uxCreateCharacterProfile : Form
     {
+
+        private string[] _txtFile = new string[50];
+
+        private string[] _dictionaryKeys = new string[50];
+
+        private string[] _extraKeys = new string[6];
+
+        private Dictionary<string, int> _dictionary = new Dictionary<string, int>();
+
+        private Dictionary<string, string> _extraItems = new Dictionary<string, string>();
+
+        
         public uxCreateCharacterProfile()
         {
             InitializeComponent();
         }
 
-        private void CreateDictionary()
+        private void CreateDictionaries()
         {
-            Dictionary<string, int> dictionary = new Dictionary<string, int>();
+            int j = 0;
             foreach(GroupBox gb in this.Controls)
             {
+                
                 foreach(NumericUpDown n in gb.Controls)
                 {
-
+                    _dictionary.Add(n.Tag.ToString(), Convert.ToInt32(n.Value));
+                    _dictionaryKeys[j] = n.Tag.ToString();
+                    j++;
                 }
             }
+            _extraItems.Add(uxCharacterName.Tag.ToString(), uxCharacterName.Text);
+            _extraKeys[0] = uxCharacterName.Tag.ToString();
+            for(int i = 0; i < uxProficiencyChecklist.Items.Count;i++)
+            {
+                if(uxProficiencyChecklist.GetItemChecked(i))
+                {
+                    _extraItems.Add(uxProficiencyChecklist.Items[i].ToString(), "");
+                    _extraKeys[i+1] = uxProficiencyChecklist.Items[i].ToString();
+                }
+            }
+
         }
 
         private void uxCreateButton_Click(object sender, EventArgs e)
         {
-            string[] txtFile = new string[30];
-            for(int i = 0; i < 18;i++)
+
+            
+        }
+        
+
+        private void CreateTextForFile()
+        {
+            for(int i = 0; i < _dictionary.Count;i++)
             {
-                txtFile[i] = "";
+                foreach(string s in _dictionary.Keys)
+                {
+                    _txtFile[i] = s + _dictionary[_dictionaryKeys[i]].ToString();
+                }
+            }
+            for(int i = _dictionary.Count; i< _extraItems.Count+_dictionary.Count;i++)
+            {
+                if(i == _dictionary.Count)
+                {
+                    _txtFile[i] = _extraKeys[0];
+                }
+                else
+                {
+                    _txtFile[i] = _extraItems[_extraKeys[i]];
+                }
             }
         }
-
 
         private void CreateCharacterFile()
         {

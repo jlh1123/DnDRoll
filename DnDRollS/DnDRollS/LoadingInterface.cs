@@ -21,7 +21,8 @@ namespace DnDRollS
 
         private void uxCreateNewCharacter_Click(object sender, EventArgs e)
         {
-            
+            uxCreateCharacterProfile createForm = new uxCreateCharacterProfile();
+            createForm.ShowDialog();
         }
     }
 }

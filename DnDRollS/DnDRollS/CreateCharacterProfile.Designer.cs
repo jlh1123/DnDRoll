@@ -80,6 +80,8 @@
             this.label21 = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.uxCharacterName = new System.Windows.Forms.TextBox();
+            this.uxProficiencyChecklist = new System.Windows.Forms.CheckedListBox();
+            this.uxSelectProficiencies = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.uxStrengthModValue)).BeginInit();
             this.uxStrengthBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uxSavingThrowModValue)).BeginInit();
@@ -107,6 +109,7 @@
             this.uxCharacterBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uxProficiencyValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxInitiativeValue)).BeginInit();
+            this.uxSelectProficiencies.SuspendLayout();
             this.SuspendLayout();
             // 
             // uxText1
@@ -663,9 +666,9 @@
             // uxCreateButton
             // 
             this.uxCreateButton.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxCreateButton.Location = new System.Drawing.Point(97, 467);
+            this.uxCreateButton.Location = new System.Drawing.Point(78, 467);
             this.uxCreateButton.Name = "uxCreateButton";
-            this.uxCreateButton.Size = new System.Drawing.Size(327, 55);
+            this.uxCreateButton.Size = new System.Drawing.Size(372, 55);
             this.uxCreateButton.TabIndex = 10;
             this.uxCreateButton.Text = "Create and Load New Character";
             this.uxCreateButton.UseVisualStyleBackColor = true;
@@ -679,16 +682,16 @@
             this.uxCharacterBox.Controls.Add(this.label19);
             this.uxCharacterBox.Controls.Add(this.uxInitiativeValue);
             this.uxCharacterBox.Controls.Add(this.uxProficiencyValue);
-            this.uxCharacterBox.Location = new System.Drawing.Point(139, 348);
+            this.uxCharacterBox.Location = new System.Drawing.Point(78, 348);
             this.uxCharacterBox.Name = "uxCharacterBox";
-            this.uxCharacterBox.Size = new System.Drawing.Size(267, 113);
+            this.uxCharacterBox.Size = new System.Drawing.Size(245, 113);
             this.uxCharacterBox.TabIndex = 11;
             this.uxCharacterBox.TabStop = false;
             this.uxCharacterBox.Text = "Character Stats";
             // 
             // uxProficiencyValue
             // 
-            this.uxProficiencyValue.Location = new System.Drawing.Point(155, 19);
+            this.uxProficiencyValue.Location = new System.Drawing.Point(111, 26);
             this.uxProficiencyValue.Maximum = new decimal(new int[] {
             15,
             0,
@@ -705,7 +708,7 @@
             // 
             // uxInitiativeValue
             // 
-            this.uxInitiativeValue.Location = new System.Drawing.Point(146, 45);
+            this.uxInitiativeValue.Location = new System.Drawing.Point(98, 52);
             this.uxInitiativeValue.Maximum = new decimal(new int[] {
             15,
             0,
@@ -723,7 +726,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(50, 21);
+            this.label19.Location = new System.Drawing.Point(6, 28);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(99, 13);
             this.label19.TabIndex = 13;
@@ -732,7 +735,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(54, 47);
+            this.label20.Location = new System.Drawing.Point(6, 54);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(86, 13);
             this.label20.TabIndex = 14;
@@ -741,7 +744,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(12, 72);
+            this.label21.Location = new System.Drawing.Point(6, 79);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(84, 13);
             this.label21.TabIndex = 15;
@@ -749,16 +752,44 @@
             // 
             // uxCharacterName
             // 
-            this.uxCharacterName.Location = new System.Drawing.Point(102, 69);
+            this.uxCharacterName.Location = new System.Drawing.Point(96, 76);
             this.uxCharacterName.Name = "uxCharacterName";
-            this.uxCharacterName.Size = new System.Drawing.Size(157, 20);
+            this.uxCharacterName.Size = new System.Drawing.Size(143, 20);
             this.uxCharacterName.TabIndex = 16;
+            // 
+            // uxProficiencyChecklist
+            // 
+            this.uxProficiencyChecklist.BackColor = System.Drawing.SystemColors.Control;
+            this.uxProficiencyChecklist.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.uxProficiencyChecklist.FormattingEnabled = true;
+            this.uxProficiencyChecklist.Items.AddRange(new object[] {
+            "Strength",
+            "Dexterity",
+            "Constitution",
+            "Intelligence",
+            "Wisdom",
+            "Charisma"});
+            this.uxProficiencyChecklist.Location = new System.Drawing.Point(5, 17);
+            this.uxProficiencyChecklist.Name = "uxProficiencyChecklist";
+            this.uxProficiencyChecklist.Size = new System.Drawing.Size(101, 90);
+            this.uxProficiencyChecklist.TabIndex = 12;
+            // 
+            // uxSelectProficiencies
+            // 
+            this.uxSelectProficiencies.Controls.Add(this.uxProficiencyChecklist);
+            this.uxSelectProficiencies.Location = new System.Drawing.Point(329, 348);
+            this.uxSelectProficiencies.Name = "uxSelectProficiencies";
+            this.uxSelectProficiencies.Size = new System.Drawing.Size(121, 113);
+            this.uxSelectProficiencies.TabIndex = 13;
+            this.uxSelectProficiencies.TabStop = false;
+            this.uxSelectProficiencies.Text = "Select Proficiencies";
             // 
             // uxCreateCharacterProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(520, 534);
+            this.ClientSize = new System.Drawing.Size(520, 535);
+            this.Controls.Add(this.uxSelectProficiencies);
             this.Controls.Add(this.uxCharacterBox);
             this.Controls.Add(this.uxCreateButton);
             this.Controls.Add(this.uxCharismaBox);
@@ -804,6 +835,7 @@
             this.uxCharacterBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uxProficiencyValue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxInitiativeValue)).EndInit();
+            this.uxSelectProficiencies.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -862,5 +894,7 @@
         private System.Windows.Forms.NumericUpDown uxInitiativeValue;
         private System.Windows.Forms.NumericUpDown uxProficiencyValue;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.CheckedListBox uxProficiencyChecklist;
+        private System.Windows.Forms.GroupBox uxSelectProficiencies;
     }
 }

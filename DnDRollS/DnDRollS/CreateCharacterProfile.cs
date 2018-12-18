@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DnDRollS
 {
-    public partial class CreateCharacterProfile : Form
+    public partial class uxCreateCharacterProfile : Form
     {
-        public CreateCharacterProfile()
+        public uxCreateCharacterProfile()
         {
             InitializeComponent();
         }

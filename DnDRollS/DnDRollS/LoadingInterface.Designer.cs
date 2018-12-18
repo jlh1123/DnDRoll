@@ -30,7 +30,7 @@
         {
             this.uxTextbox1 = new System.Windows.Forms.TextBox();
             this.uxLoadCharacter = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.uxCreateNewCharacter = new System.Windows.Forms.Button();
             this.uxTextbox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -55,15 +55,16 @@
             this.uxLoadCharacter.Text = "Load Character Txt File";
             this.uxLoadCharacter.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // uxCreateNewCharacter
             // 
-            this.button1.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(335, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(323, 76);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Create New Character Profile";
-            this.button1.UseVisualStyleBackColor = true;
+            this.uxCreateNewCharacter.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxCreateNewCharacter.Location = new System.Drawing.Point(335, 80);
+            this.uxCreateNewCharacter.Name = "uxCreateNewCharacter";
+            this.uxCreateNewCharacter.Size = new System.Drawing.Size(323, 76);
+            this.uxCreateNewCharacter.TabIndex = 2;
+            this.uxCreateNewCharacter.Text = "Create New Character Profile";
+            this.uxCreateNewCharacter.UseVisualStyleBackColor = true;
+            this.uxCreateNewCharacter.Click += new System.EventHandler(this.uxCreateNewCharacter_Click);
             // 
             // uxTextbox2
             // 
@@ -83,7 +84,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(670, 169);
             this.Controls.Add(this.uxTextbox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.uxCreateNewCharacter);
             this.Controls.Add(this.uxLoadCharacter);
             this.Controls.Add(this.uxTextbox1);
             this.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -98,7 +99,7 @@
 
         private System.Windows.Forms.TextBox uxTextbox1;
         private System.Windows.Forms.Button uxLoadCharacter;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button uxCreateNewCharacter;
         private System.Windows.Forms.TextBox uxTextbox2;
     }
 }

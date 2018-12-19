@@ -44,12 +44,12 @@ namespace DnDRollS
             }
             _extraItems.Add(uxCharacterName.Tag.ToString(), uxCharacterName.Text);
             _extraKeys[0] = uxCharacterName.Tag.ToString();
-            for(int i = 0; i < uxProficiencyChecklist.Items.Count;i++)
+            for(int i = 0; i < uxSavingThrowsChecklist.Items.Count;i++)
             {
-                if(uxProficiencyChecklist.GetItemChecked(i))
+                if(uxSavingThrowsChecklist.GetItemChecked(i))
                 {
-                    _extraItems.Add(uxProficiencyChecklist.Items[i].ToString(), "");
-                    _extraKeys[i+1] = uxProficiencyChecklist.Items[i].ToString();
+                    _extraItems.Add(uxSavingThrowsChecklist.Items[i].ToString(), "");
+                    _extraKeys[i+1] = uxSavingThrowsChecklist.Items[i].ToString();
                 }
             }
 
@@ -90,7 +90,5 @@ namespace DnDRollS
             save.Filter = "Text Files (*.txt)|*.txt";
             save.ShowDialog();
         }
-
-
     }//end class
 }//end namespace

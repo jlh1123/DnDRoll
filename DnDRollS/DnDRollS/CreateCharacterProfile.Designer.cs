@@ -714,6 +714,7 @@
             // uxCharacterName
             // 
             this.uxCharacterName.Location = new System.Drawing.Point(97, 16);
+            this.uxCharacterName.MaxLength = 200;
             this.uxCharacterName.Name = "uxCharacterName";
             this.uxCharacterName.Size = new System.Drawing.Size(143, 20);
             this.uxCharacterName.TabIndex = 16;
@@ -851,7 +852,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(97, 50);
+            this.textBox1.Location = new System.Drawing.Point(45, 50);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(143, 20);
             this.textBox1.TabIndex = 18;
@@ -862,13 +863,13 @@
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(7, 53);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(84, 13);
+            this.label22.Size = new System.Drawing.Size(32, 13);
             this.label22.TabIndex = 17;
-            this.label22.Text = "Character Name";
+            this.label22.Text = "Class";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(96, 84);
+            this.textBox2.Location = new System.Drawing.Point(56, 84);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(143, 20);
             this.textBox2.TabIndex = 20;
@@ -879,9 +880,9 @@
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(6, 87);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(84, 13);
+            this.label23.Size = new System.Drawing.Size(44, 13);
             this.label23.TabIndex = 19;
-            this.label23.Text = "Character Name";
+            this.label23.Text = "Race(s)";
             // 
             // uxCreateCharacterProfile
             // 

@@ -84,7 +84,10 @@
             this.uxSelectSavingThrowsProficiencies = new System.Windows.Forms.GroupBox();
             this.uxCharacterProficiencies = new System.Windows.Forms.GroupBox();
             this.uxProficiencyChecklist = new System.Windows.Forms.CheckedListBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.uxStrengthModValue)).BeginInit();
             this.uxStrengthBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uxBaseStrength)).BeginInit();
@@ -691,6 +694,10 @@
             // 
             // uxCharacterBox
             // 
+            this.uxCharacterBox.Controls.Add(this.textBox2);
+            this.uxCharacterBox.Controls.Add(this.label23);
+            this.uxCharacterBox.Controls.Add(this.textBox1);
+            this.uxCharacterBox.Controls.Add(this.label22);
             this.uxCharacterBox.Controls.Add(this.uxCharacterName);
             this.uxCharacterBox.Controls.Add(this.label21);
             this.uxCharacterBox.Controls.Add(this.label20);
@@ -699,14 +706,14 @@
             this.uxCharacterBox.Controls.Add(this.uxProficiencyValue);
             this.uxCharacterBox.Location = new System.Drawing.Point(12, 242);
             this.uxCharacterBox.Name = "uxCharacterBox";
-            this.uxCharacterBox.Size = new System.Drawing.Size(245, 130);
+            this.uxCharacterBox.Size = new System.Drawing.Size(245, 184);
             this.uxCharacterBox.TabIndex = 11;
             this.uxCharacterBox.TabStop = false;
             this.uxCharacterBox.Text = "Character Stats";
             // 
             // uxCharacterName
             // 
-            this.uxCharacterName.Location = new System.Drawing.Point(95, 95);
+            this.uxCharacterName.Location = new System.Drawing.Point(97, 16);
             this.uxCharacterName.Name = "uxCharacterName";
             this.uxCharacterName.Size = new System.Drawing.Size(143, 20);
             this.uxCharacterName.TabIndex = 16;
@@ -715,7 +722,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(5, 98);
+            this.label21.Location = new System.Drawing.Point(7, 19);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(84, 13);
             this.label21.TabIndex = 15;
@@ -724,7 +731,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 60);
+            this.label20.Location = new System.Drawing.Point(7, 156);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(86, 13);
             this.label20.TabIndex = 14;
@@ -733,7 +740,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(5, 26);
+            this.label19.Location = new System.Drawing.Point(6, 122);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(99, 13);
             this.label19.TabIndex = 13;
@@ -741,7 +748,7 @@
             // 
             // uxInitiativeValue
             // 
-            this.uxInitiativeValue.Location = new System.Drawing.Point(98, 58);
+            this.uxInitiativeValue.Location = new System.Drawing.Point(99, 154);
             this.uxInitiativeValue.Maximum = new decimal(new int[] {
             15,
             0,
@@ -759,7 +766,7 @@
             // 
             // uxProficiencyValue
             // 
-            this.uxProficiencyValue.Location = new System.Drawing.Point(110, 24);
+            this.uxProficiencyValue.Location = new System.Drawing.Point(111, 120);
             this.uxProficiencyValue.Maximum = new decimal(new int[] {
             15,
             0,
@@ -787,9 +794,9 @@
             "Intelligence",
             "Wisdom",
             "Charisma"});
-            this.uxSavingThrowsChecklist.Location = new System.Drawing.Point(8, 30);
+            this.uxSavingThrowsChecklist.Location = new System.Drawing.Point(8, 34);
             this.uxSavingThrowsChecklist.Name = "uxSavingThrowsChecklist";
-            this.uxSavingThrowsChecklist.Size = new System.Drawing.Size(101, 90);
+            this.uxSavingThrowsChecklist.Size = new System.Drawing.Size(101, 135);
             this.uxSavingThrowsChecklist.TabIndex = 12;
             // 
             // uxSelectSavingThrowsProficiencies
@@ -797,7 +804,7 @@
             this.uxSelectSavingThrowsProficiencies.Controls.Add(this.uxSavingThrowsChecklist);
             this.uxSelectSavingThrowsProficiencies.Location = new System.Drawing.Point(263, 242);
             this.uxSelectSavingThrowsProficiencies.Name = "uxSelectSavingThrowsProficiencies";
-            this.uxSelectSavingThrowsProficiencies.Size = new System.Drawing.Size(121, 130);
+            this.uxSelectSavingThrowsProficiencies.Size = new System.Drawing.Size(121, 184);
             this.uxSelectSavingThrowsProficiencies.TabIndex = 13;
             this.uxSelectSavingThrowsProficiencies.TabStop = false;
             this.uxSelectSavingThrowsProficiencies.Text = "Saving Throw Proficiencies";
@@ -842,21 +849,45 @@
             this.uxProficiencyChecklist.Size = new System.Drawing.Size(341, 150);
             this.uxProficiencyChecklist.TabIndex = 15;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(97, 50);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(143, 20);
+            this.textBox1.TabIndex = 18;
+            this.textBox1.Tag = "Character_Name";
+            // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(140, 421);
+            this.label22.Location = new System.Drawing.Point(7, 53);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(41, 13);
-            this.label22.TabIndex = 15;
-            this.label22.Text = "label22";
+            this.label22.Size = new System.Drawing.Size(84, 13);
+            this.label22.TabIndex = 17;
+            this.label22.Text = "Character Name";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(96, 84);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(143, 20);
+            this.textBox2.TabIndex = 20;
+            this.textBox2.Tag = "Character_Name";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(6, 87);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(84, 13);
+            this.label23.TabIndex = 19;
+            this.label23.Text = "Character Name";
             // 
             // uxCreateCharacterProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 535);
-            this.Controls.Add(this.label22);
             this.Controls.Add(this.uxCharacterProficiencies);
             this.Controls.Add(this.uxSelectSavingThrowsProficiencies);
             this.Controls.Add(this.uxCharacterBox);
@@ -968,6 +999,9 @@
         private System.Windows.Forms.GroupBox uxSelectSavingThrowsProficiencies;
         private System.Windows.Forms.GroupBox uxCharacterProficiencies;
         private System.Windows.Forms.CheckedListBox uxProficiencyChecklist;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label22;
     }
 }

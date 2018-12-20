@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace DnDRollS
 {
     public partial class uxCreateCharacterProfile : Form
     {
+        public string Filename { get; private set; }
 
         private string[] _txtFile = new string[50];
 
@@ -69,7 +71,10 @@ namespace DnDRollS
 
         private void uxCreateButton_Click(object sender, EventArgs e)
         {
-
+            using (StreamWriter sw = new StreamWriter(Filename))
+            {
+                while
+            }
             
         }
         
@@ -107,6 +112,7 @@ namespace DnDRollS
             SaveFileDialog save = new SaveFileDialog();
             save.Filter = "Text Files (*.txt)|*.txt";
             save.ShowDialog();
+            Filename = save.FileName;
 
         
         }

@@ -73,6 +73,31 @@
             this.uxArcanaBonus = new System.Windows.Forms.TextBox();
             this.uxAnimalHandlingBonus = new System.Windows.Forms.TextBox();
             this.uxAcrobaticsBonus = new System.Windows.Forms.TextBox();
+            this.uxInsightBonus = new System.Windows.Forms.TextBox();
+            this.uxIntimidationBonus = new System.Windows.Forms.TextBox();
+            this.uxInvestigationBonus = new System.Windows.Forms.TextBox();
+            this.uxMedicineBonus = new System.Windows.Forms.TextBox();
+            this.uxNatureBonus = new System.Windows.Forms.TextBox();
+            this.uxPerceptionBonus = new System.Windows.Forms.TextBox();
+            this.uxRollPerception = new System.Windows.Forms.Button();
+            this.uxRollNature = new System.Windows.Forms.Button();
+            this.uxRollMedicine = new System.Windows.Forms.Button();
+            this.uxRollInvestigation = new System.Windows.Forms.Button();
+            this.uxRollIntimidation = new System.Windows.Forms.Button();
+            this.uxRollInsight = new System.Windows.Forms.Button();
+            this.uxPerformanceBonus = new System.Windows.Forms.TextBox();
+            this.uxPersuasionBonus = new System.Windows.Forms.TextBox();
+            this.uxReligionBonus = new System.Windows.Forms.TextBox();
+            this.uxSleightOfHandBonus = new System.Windows.Forms.TextBox();
+            this.uxStealthBonus = new System.Windows.Forms.TextBox();
+            this.uxSurvivalBonus = new System.Windows.Forms.TextBox();
+            this.uxRollSurvival = new System.Windows.Forms.Button();
+            this.uxRollStealth = new System.Windows.Forms.Button();
+            this.uxRollSleightOfHand = new System.Windows.Forms.Button();
+            this.uxRollReligion = new System.Windows.Forms.Button();
+            this.uxRollPersuasion = new System.Windows.Forms.Button();
+            this.uxRollPerformance = new System.Windows.Forms.Button();
+            this.uxProfList = new System.Windows.Forms.ListView();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,7 +134,7 @@
             // uxRollResult
             // 
             this.uxRollResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxRollResult.Location = new System.Drawing.Point(299, 418);
+            this.uxRollResult.Location = new System.Drawing.Point(289, 499);
             this.uxRollResult.MaxLength = 100;
             this.uxRollResult.Name = "uxRollResult";
             this.uxRollResult.ReadOnly = true;
@@ -120,7 +145,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(296, 397);
+            this.label1.Location = new System.Drawing.Point(286, 478);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 18);
             this.label1.TabIndex = 4;
@@ -504,11 +529,261 @@
             this.uxAcrobaticsBonus.Size = new System.Drawing.Size(44, 20);
             this.uxAcrobaticsBonus.TabIndex = 48;
             // 
+            // uxInsightBonus
+            // 
+            this.uxInsightBonus.Location = new System.Drawing.Point(42, 337);
+            this.uxInsightBonus.Name = "uxInsightBonus";
+            this.uxInsightBonus.ReadOnly = true;
+            this.uxInsightBonus.Size = new System.Drawing.Size(44, 20);
+            this.uxInsightBonus.TabIndex = 60;
+            // 
+            // uxIntimidationBonus
+            // 
+            this.uxIntimidationBonus.Location = new System.Drawing.Point(154, 337);
+            this.uxIntimidationBonus.Name = "uxIntimidationBonus";
+            this.uxIntimidationBonus.ReadOnly = true;
+            this.uxIntimidationBonus.Size = new System.Drawing.Size(44, 20);
+            this.uxIntimidationBonus.TabIndex = 59;
+            // 
+            // uxInvestigationBonus
+            // 
+            this.uxInvestigationBonus.Location = new System.Drawing.Point(270, 337);
+            this.uxInvestigationBonus.Name = "uxInvestigationBonus";
+            this.uxInvestigationBonus.ReadOnly = true;
+            this.uxInvestigationBonus.Size = new System.Drawing.Size(44, 20);
+            this.uxInvestigationBonus.TabIndex = 58;
+            // 
+            // uxMedicineBonus
+            // 
+            this.uxMedicineBonus.Location = new System.Drawing.Point(383, 337);
+            this.uxMedicineBonus.Name = "uxMedicineBonus";
+            this.uxMedicineBonus.ReadOnly = true;
+            this.uxMedicineBonus.Size = new System.Drawing.Size(44, 20);
+            this.uxMedicineBonus.TabIndex = 57;
+            // 
+            // uxNatureBonus
+            // 
+            this.uxNatureBonus.Location = new System.Drawing.Point(493, 337);
+            this.uxNatureBonus.Name = "uxNatureBonus";
+            this.uxNatureBonus.ReadOnly = true;
+            this.uxNatureBonus.Size = new System.Drawing.Size(44, 20);
+            this.uxNatureBonus.TabIndex = 56;
+            // 
+            // uxPerceptionBonus
+            // 
+            this.uxPerceptionBonus.Location = new System.Drawing.Point(610, 337);
+            this.uxPerceptionBonus.Name = "uxPerceptionBonus";
+            this.uxPerceptionBonus.ReadOnly = true;
+            this.uxPerceptionBonus.Size = new System.Drawing.Size(44, 20);
+            this.uxPerceptionBonus.TabIndex = 55;
+            // 
+            // uxRollPerception
+            // 
+            this.uxRollPerception.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRollPerception.Location = new System.Drawing.Point(577, 287);
+            this.uxRollPerception.Name = "uxRollPerception";
+            this.uxRollPerception.Size = new System.Drawing.Size(107, 46);
+            this.uxRollPerception.TabIndex = 54;
+            this.uxRollPerception.Text = "Roll Perception";
+            this.uxRollPerception.UseVisualStyleBackColor = true;
+            // 
+            // uxRollNature
+            // 
+            this.uxRollNature.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRollNature.Location = new System.Drawing.Point(464, 287);
+            this.uxRollNature.Name = "uxRollNature";
+            this.uxRollNature.Size = new System.Drawing.Size(107, 46);
+            this.uxRollNature.TabIndex = 53;
+            this.uxRollNature.Text = "Roll Nature";
+            this.uxRollNature.UseVisualStyleBackColor = true;
+            // 
+            // uxRollMedicine
+            // 
+            this.uxRollMedicine.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRollMedicine.Location = new System.Drawing.Point(351, 287);
+            this.uxRollMedicine.Name = "uxRollMedicine";
+            this.uxRollMedicine.Size = new System.Drawing.Size(107, 46);
+            this.uxRollMedicine.TabIndex = 52;
+            this.uxRollMedicine.Text = "Roll Medicine";
+            this.uxRollMedicine.UseVisualStyleBackColor = true;
+            // 
+            // uxRollInvestigation
+            // 
+            this.uxRollInvestigation.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRollInvestigation.Location = new System.Drawing.Point(238, 287);
+            this.uxRollInvestigation.Name = "uxRollInvestigation";
+            this.uxRollInvestigation.Size = new System.Drawing.Size(107, 46);
+            this.uxRollInvestigation.TabIndex = 51;
+            this.uxRollInvestigation.Text = "Roll Investigation";
+            this.uxRollInvestigation.UseVisualStyleBackColor = true;
+            // 
+            // uxRollIntimidation
+            // 
+            this.uxRollIntimidation.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRollIntimidation.Location = new System.Drawing.Point(125, 287);
+            this.uxRollIntimidation.Name = "uxRollIntimidation";
+            this.uxRollIntimidation.Size = new System.Drawing.Size(107, 46);
+            this.uxRollIntimidation.TabIndex = 50;
+            this.uxRollIntimidation.Text = "Roll Intimidation";
+            this.uxRollIntimidation.UseVisualStyleBackColor = true;
+            // 
+            // uxRollInsight
+            // 
+            this.uxRollInsight.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRollInsight.Location = new System.Drawing.Point(12, 287);
+            this.uxRollInsight.Name = "uxRollInsight";
+            this.uxRollInsight.Size = new System.Drawing.Size(107, 46);
+            this.uxRollInsight.TabIndex = 49;
+            this.uxRollInsight.Text = "Roll Insight";
+            this.uxRollInsight.UseVisualStyleBackColor = true;
+            // 
+            // uxPerformanceBonus
+            // 
+            this.uxPerformanceBonus.Location = new System.Drawing.Point(42, 428);
+            this.uxPerformanceBonus.Name = "uxPerformanceBonus";
+            this.uxPerformanceBonus.ReadOnly = true;
+            this.uxPerformanceBonus.Size = new System.Drawing.Size(44, 20);
+            this.uxPerformanceBonus.TabIndex = 72;
+            // 
+            // uxPersuasionBonus
+            // 
+            this.uxPersuasionBonus.Location = new System.Drawing.Point(154, 428);
+            this.uxPersuasionBonus.Name = "uxPersuasionBonus";
+            this.uxPersuasionBonus.ReadOnly = true;
+            this.uxPersuasionBonus.Size = new System.Drawing.Size(44, 20);
+            this.uxPersuasionBonus.TabIndex = 71;
+            // 
+            // uxReligionBonus
+            // 
+            this.uxReligionBonus.Location = new System.Drawing.Point(270, 428);
+            this.uxReligionBonus.Name = "uxReligionBonus";
+            this.uxReligionBonus.ReadOnly = true;
+            this.uxReligionBonus.Size = new System.Drawing.Size(44, 20);
+            this.uxReligionBonus.TabIndex = 70;
+            // 
+            // uxSleightOfHandBonus
+            // 
+            this.uxSleightOfHandBonus.Location = new System.Drawing.Point(383, 428);
+            this.uxSleightOfHandBonus.Name = "uxSleightOfHandBonus";
+            this.uxSleightOfHandBonus.ReadOnly = true;
+            this.uxSleightOfHandBonus.Size = new System.Drawing.Size(44, 20);
+            this.uxSleightOfHandBonus.TabIndex = 69;
+            // 
+            // uxStealthBonus
+            // 
+            this.uxStealthBonus.Location = new System.Drawing.Point(493, 428);
+            this.uxStealthBonus.Name = "uxStealthBonus";
+            this.uxStealthBonus.ReadOnly = true;
+            this.uxStealthBonus.Size = new System.Drawing.Size(44, 20);
+            this.uxStealthBonus.TabIndex = 68;
+            // 
+            // uxSurvivalBonus
+            // 
+            this.uxSurvivalBonus.Location = new System.Drawing.Point(610, 428);
+            this.uxSurvivalBonus.Name = "uxSurvivalBonus";
+            this.uxSurvivalBonus.ReadOnly = true;
+            this.uxSurvivalBonus.Size = new System.Drawing.Size(44, 20);
+            this.uxSurvivalBonus.TabIndex = 67;
+            // 
+            // uxRollSurvival
+            // 
+            this.uxRollSurvival.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRollSurvival.Location = new System.Drawing.Point(577, 378);
+            this.uxRollSurvival.Name = "uxRollSurvival";
+            this.uxRollSurvival.Size = new System.Drawing.Size(107, 46);
+            this.uxRollSurvival.TabIndex = 66;
+            this.uxRollSurvival.Text = "Roll Survival";
+            this.uxRollSurvival.UseVisualStyleBackColor = true;
+            // 
+            // uxRollStealth
+            // 
+            this.uxRollStealth.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRollStealth.Location = new System.Drawing.Point(464, 378);
+            this.uxRollStealth.Name = "uxRollStealth";
+            this.uxRollStealth.Size = new System.Drawing.Size(107, 46);
+            this.uxRollStealth.TabIndex = 65;
+            this.uxRollStealth.Text = "Roll Stealth";
+            this.uxRollStealth.UseVisualStyleBackColor = true;
+            // 
+            // uxRollSleightOfHand
+            // 
+            this.uxRollSleightOfHand.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRollSleightOfHand.Location = new System.Drawing.Point(351, 378);
+            this.uxRollSleightOfHand.Name = "uxRollSleightOfHand";
+            this.uxRollSleightOfHand.Size = new System.Drawing.Size(107, 46);
+            this.uxRollSleightOfHand.TabIndex = 64;
+            this.uxRollSleightOfHand.Text = "Roll Sleight of Hand";
+            this.uxRollSleightOfHand.UseVisualStyleBackColor = true;
+            // 
+            // uxRollReligion
+            // 
+            this.uxRollReligion.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRollReligion.Location = new System.Drawing.Point(238, 378);
+            this.uxRollReligion.Name = "uxRollReligion";
+            this.uxRollReligion.Size = new System.Drawing.Size(107, 46);
+            this.uxRollReligion.TabIndex = 63;
+            this.uxRollReligion.Text = "Roll Religion";
+            this.uxRollReligion.UseVisualStyleBackColor = true;
+            // 
+            // uxRollPersuasion
+            // 
+            this.uxRollPersuasion.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRollPersuasion.Location = new System.Drawing.Point(125, 378);
+            this.uxRollPersuasion.Name = "uxRollPersuasion";
+            this.uxRollPersuasion.Size = new System.Drawing.Size(107, 46);
+            this.uxRollPersuasion.TabIndex = 62;
+            this.uxRollPersuasion.Text = "Roll Persuasion";
+            this.uxRollPersuasion.UseVisualStyleBackColor = true;
+            // 
+            // uxRollPerformance
+            // 
+            this.uxRollPerformance.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxRollPerformance.Location = new System.Drawing.Point(12, 378);
+            this.uxRollPerformance.Name = "uxRollPerformance";
+            this.uxRollPerformance.Size = new System.Drawing.Size(107, 46);
+            this.uxRollPerformance.TabIndex = 61;
+            this.uxRollPerformance.Text = "Roll Performance";
+            this.uxRollPerformance.UseVisualStyleBackColor = true;
+            // 
+            // uxProfList
+            // 
+            this.uxProfList.BackColor = System.Drawing.SystemColors.Control;
+            this.uxProfList.Location = new System.Drawing.Point(12, 466);
+            this.uxProfList.Name = "uxProfList";
+            this.uxProfList.Size = new System.Drawing.Size(142, 82);
+            this.uxProfList.TabIndex = 73;
+            this.uxProfList.UseCompatibleStateImageBehavior = false;
+            // 
             // MainDiceInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 482);
+            this.ClientSize = new System.Drawing.Size(697, 560);
+            this.Controls.Add(this.uxProfList);
+            this.Controls.Add(this.uxPerformanceBonus);
+            this.Controls.Add(this.uxPersuasionBonus);
+            this.Controls.Add(this.uxReligionBonus);
+            this.Controls.Add(this.uxSleightOfHandBonus);
+            this.Controls.Add(this.uxStealthBonus);
+            this.Controls.Add(this.uxSurvivalBonus);
+            this.Controls.Add(this.uxRollSurvival);
+            this.Controls.Add(this.uxRollStealth);
+            this.Controls.Add(this.uxRollSleightOfHand);
+            this.Controls.Add(this.uxRollReligion);
+            this.Controls.Add(this.uxRollPersuasion);
+            this.Controls.Add(this.uxRollPerformance);
+            this.Controls.Add(this.uxInsightBonus);
+            this.Controls.Add(this.uxIntimidationBonus);
+            this.Controls.Add(this.uxInvestigationBonus);
+            this.Controls.Add(this.uxMedicineBonus);
+            this.Controls.Add(this.uxNatureBonus);
+            this.Controls.Add(this.uxPerceptionBonus);
+            this.Controls.Add(this.uxRollPerception);
+            this.Controls.Add(this.uxRollNature);
+            this.Controls.Add(this.uxRollMedicine);
+            this.Controls.Add(this.uxRollInvestigation);
+            this.Controls.Add(this.uxRollIntimidation);
+            this.Controls.Add(this.uxRollInsight);
             this.Controls.Add(this.uxAcrobaticsBonus);
             this.Controls.Add(this.uxAnimalHandlingBonus);
             this.Controls.Add(this.uxArcanaBonus);
@@ -606,5 +881,30 @@
         private System.Windows.Forms.TextBox uxArcanaBonus;
         private System.Windows.Forms.TextBox uxAnimalHandlingBonus;
         private System.Windows.Forms.TextBox uxAcrobaticsBonus;
+        private System.Windows.Forms.TextBox uxInsightBonus;
+        private System.Windows.Forms.TextBox uxIntimidationBonus;
+        private System.Windows.Forms.TextBox uxInvestigationBonus;
+        private System.Windows.Forms.TextBox uxMedicineBonus;
+        private System.Windows.Forms.TextBox uxNatureBonus;
+        private System.Windows.Forms.TextBox uxPerceptionBonus;
+        private System.Windows.Forms.Button uxRollPerception;
+        private System.Windows.Forms.Button uxRollNature;
+        private System.Windows.Forms.Button uxRollMedicine;
+        private System.Windows.Forms.Button uxRollInvestigation;
+        private System.Windows.Forms.Button uxRollIntimidation;
+        private System.Windows.Forms.Button uxRollInsight;
+        private System.Windows.Forms.TextBox uxPerformanceBonus;
+        private System.Windows.Forms.TextBox uxPersuasionBonus;
+        private System.Windows.Forms.TextBox uxReligionBonus;
+        private System.Windows.Forms.TextBox uxSleightOfHandBonus;
+        private System.Windows.Forms.TextBox uxStealthBonus;
+        private System.Windows.Forms.TextBox uxSurvivalBonus;
+        private System.Windows.Forms.Button uxRollSurvival;
+        private System.Windows.Forms.Button uxRollStealth;
+        private System.Windows.Forms.Button uxRollSleightOfHand;
+        private System.Windows.Forms.Button uxRollReligion;
+        private System.Windows.Forms.Button uxRollPersuasion;
+        private System.Windows.Forms.Button uxRollPerformance;
+        private System.Windows.Forms.ListView uxProfList;
     }
 }

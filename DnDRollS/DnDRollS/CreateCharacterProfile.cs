@@ -94,7 +94,12 @@ namespace DnDRollS
                     _txtFile[i] = _extraItems[_extraKeys[i]];
                 }
             }
-            for(int j = 0; j < _cpro)
+            int j = _dictionary.Count + _extraItems.Count;
+            foreach(String key in _CProf.Keys)
+            {
+                _txtFile[j] = key;
+                j++;
+            }
         }
 
         private void CreateCharacterFile()
@@ -102,6 +107,8 @@ namespace DnDRollS
             SaveFileDialog save = new SaveFileDialog();
             save.Filter = "Text Files (*.txt)|*.txt";
             save.ShowDialog();
+
+        
         }
     }//end class
 }//end namespace

@@ -23,6 +23,10 @@ namespace DnDRollS
 
         private Dictionary<string, string> _extraItems = new Dictionary<string, string>();
 
+        private Dictionary<string, string> _STPRof = new Dictionary<string, string>();
+
+        private Dictionary<string, string> _CProf = new Dictionary<string, string>();   
+
         
         public uxCreateCharacterProfile()
         {
@@ -52,6 +56,7 @@ namespace DnDRollS
                     _extraKeys[i+1] = uxSavingThrowsChecklist.Items[i].ToString();
                 }
             }
+
 
         }
 

@@ -69,11 +69,16 @@ namespace DnDRollS
 
         }
 
+        
+
         private void uxCreateButton_Click(object sender, EventArgs e)
-        {
+        { 
             using (StreamWriter sw = new StreamWriter(Filename))
             {
-                while
+                for(int a = 0; a < _txtFile.Length; a++)
+                {
+                    sw.WriteLine(e);
+                }
             }
             
         }

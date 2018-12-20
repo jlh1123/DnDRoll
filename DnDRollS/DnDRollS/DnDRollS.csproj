@@ -58,6 +58,12 @@
     <Compile Include="LoadingInterface.Designer.cs">
       <DependentUpon>LoadingInterface.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainDiceInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainDiceInterface.Designer.cs">
+      <DependentUpon>MainDiceInterface.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CreateCharacterProfile.resx">

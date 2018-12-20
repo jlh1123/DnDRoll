@@ -56,6 +56,13 @@ namespace DnDRollS
                     _extraKeys[i+1] = uxSavingThrowsChecklist.Items[i].ToString();
                 }
             }
+            for(int i = 0; i < uxProficiencyChecklist.Items.Count; i++)
+            {
+                if(uxProficiencyChecklist.GetItemChecked(i))
+                {
+                    _CProf.Add(uxProficiencyChecklist.Items[i].ToString(), "");
+                }
+            }
 
 
         }

@@ -72,6 +72,9 @@
     <EmbeddedResource Include="LoadingInterface.resx">
       <DependentUpon>LoadingInterface.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainDiceInterface.resx">
+      <DependentUpon>MainDiceInterface.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

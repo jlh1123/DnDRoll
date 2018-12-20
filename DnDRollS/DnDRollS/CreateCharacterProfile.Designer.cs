@@ -88,6 +88,8 @@
             this.label22 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.uxLevelValue = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.uxStrengthModValue)).BeginInit();
             this.uxStrengthBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uxBaseStrength)).BeginInit();
@@ -117,6 +119,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.uxProficiencyValue)).BeginInit();
             this.uxSelectSavingThrowsProficiencies.SuspendLayout();
             this.uxCharacterProficiencies.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uxLevelValue)).BeginInit();
             this.SuspendLayout();
             // 
             // uxText1
@@ -133,19 +136,24 @@
             // 
             this.uxStrengthModValue.Location = new System.Drawing.Point(99, 14);
             this.uxStrengthModValue.Maximum = new decimal(new int[] {
-            15,
+            20,
             0,
             0,
             0});
             this.uxStrengthModValue.Minimum = new decimal(new int[] {
-            15,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.uxStrengthModValue.Name = "uxStrengthModValue";
             this.uxStrengthModValue.Size = new System.Drawing.Size(41, 19);
             this.uxStrengthModValue.TabIndex = 1;
             this.uxStrengthModValue.Tag = "Strength_Modifier";
+            this.uxStrengthModValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label1
             // 
@@ -180,10 +188,20 @@
             0,
             0,
             0});
+            this.uxBaseStrength.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.uxBaseStrength.Name = "uxBaseStrength";
             this.uxBaseStrength.Size = new System.Drawing.Size(38, 19);
             this.uxBaseStrength.TabIndex = 9;
             this.uxBaseStrength.Tag = "Base_Strength";
+            this.uxBaseStrength.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label3
             // 
@@ -198,19 +216,24 @@
             // 
             this.uxSavingThrowModValue.Location = new System.Drawing.Point(165, 43);
             this.uxSavingThrowModValue.Maximum = new decimal(new int[] {
-            15,
+            20,
             0,
             0,
             0});
             this.uxSavingThrowModValue.Minimum = new decimal(new int[] {
-            15,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.uxSavingThrowModValue.Name = "uxSavingThrowModValue";
             this.uxSavingThrowModValue.Size = new System.Drawing.Size(42, 19);
             this.uxSavingThrowModValue.TabIndex = 7;
             this.uxSavingThrowModValue.Tag = "Strength_Saving_Throw_Modifier";
+            this.uxSavingThrowModValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label2
             // 
@@ -245,10 +268,20 @@
             0,
             0,
             0});
+            this.uxBaseDex.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.uxBaseDex.Name = "uxBaseDex";
             this.uxBaseDex.Size = new System.Drawing.Size(38, 19);
             this.uxBaseDex.TabIndex = 9;
             this.uxBaseDex.Tag = "Base_Dexterity";
+            this.uxBaseDex.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label4
             // 
@@ -263,19 +296,24 @@
             // 
             this.uxDexSavingThrowModValue.Location = new System.Drawing.Point(166, 44);
             this.uxDexSavingThrowModValue.Maximum = new decimal(new int[] {
-            15,
+            20,
             0,
             0,
             0});
             this.uxDexSavingThrowModValue.Minimum = new decimal(new int[] {
-            15,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.uxDexSavingThrowModValue.Name = "uxDexSavingThrowModValue";
             this.uxDexSavingThrowModValue.Size = new System.Drawing.Size(42, 19);
             this.uxDexSavingThrowModValue.TabIndex = 7;
             this.uxDexSavingThrowModValue.Tag = "Dexterity_Saving_Throw_Modifier";
+            this.uxDexSavingThrowModValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label5
             // 
@@ -299,19 +337,24 @@
             // 
             this.uxDexModValue.Location = new System.Drawing.Point(101, 14);
             this.uxDexModValue.Maximum = new decimal(new int[] {
-            15,
+            20,
             0,
             0,
             0});
             this.uxDexModValue.Minimum = new decimal(new int[] {
-            15,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.uxDexModValue.Name = "uxDexModValue";
             this.uxDexModValue.Size = new System.Drawing.Size(41, 19);
             this.uxDexModValue.TabIndex = 1;
             this.uxDexModValue.Tag = "Dexterity_Modifier";
+            this.uxDexModValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // uxConstitutionBox
             // 
@@ -355,19 +398,24 @@
             // 
             this.uxConSavingThrowModValue.Location = new System.Drawing.Point(181, 44);
             this.uxConSavingThrowModValue.Maximum = new decimal(new int[] {
-            15,
+            20,
             0,
             0,
             0});
             this.uxConSavingThrowModValue.Minimum = new decimal(new int[] {
-            15,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.uxConSavingThrowModValue.Name = "uxConSavingThrowModValue";
             this.uxConSavingThrowModValue.Size = new System.Drawing.Size(42, 19);
             this.uxConSavingThrowModValue.TabIndex = 7;
             this.uxConSavingThrowModValue.Tag = "Constitution_Saving_Throw_Modifier";
+            this.uxConSavingThrowModValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label8
             // 
@@ -391,19 +439,24 @@
             // 
             this.uxConModValue.Location = new System.Drawing.Point(113, 14);
             this.uxConModValue.Maximum = new decimal(new int[] {
-            15,
+            20,
             0,
             0,
             0});
             this.uxConModValue.Minimum = new decimal(new int[] {
-            15,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.uxConModValue.Name = "uxConModValue";
             this.uxConModValue.Size = new System.Drawing.Size(41, 19);
             this.uxConModValue.TabIndex = 1;
             this.uxConModValue.Tag = "Constitution_Modifier";
+            this.uxConModValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // uxIntBox
             // 
@@ -429,10 +482,20 @@
             0,
             0,
             0});
+            this.uxBaseInt.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.uxBaseInt.Name = "uxBaseInt";
             this.uxBaseInt.Size = new System.Drawing.Size(38, 19);
             this.uxBaseInt.TabIndex = 9;
             this.uxBaseInt.Tag = "Base_Intelligence";
+            this.uxBaseInt.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label10
             // 
@@ -447,19 +510,24 @@
             // 
             this.uxIntSavingThrowModValue.Location = new System.Drawing.Point(177, 43);
             this.uxIntSavingThrowModValue.Maximum = new decimal(new int[] {
-            15,
+            20,
             0,
             0,
             0});
             this.uxIntSavingThrowModValue.Minimum = new decimal(new int[] {
-            15,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.uxIntSavingThrowModValue.Name = "uxIntSavingThrowModValue";
             this.uxIntSavingThrowModValue.Size = new System.Drawing.Size(42, 19);
             this.uxIntSavingThrowModValue.TabIndex = 7;
             this.uxIntSavingThrowModValue.Tag = "Intelligence_Saving_Throw_Modifier";
+            this.uxIntSavingThrowModValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label11
             // 
@@ -483,19 +551,24 @@
             // 
             this.uxIntModValue.Location = new System.Drawing.Point(112, 14);
             this.uxIntModValue.Maximum = new decimal(new int[] {
-            15,
+            20,
             0,
             0,
             0});
             this.uxIntModValue.Minimum = new decimal(new int[] {
-            15,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.uxIntModValue.Name = "uxIntModValue";
             this.uxIntModValue.Size = new System.Drawing.Size(41, 19);
             this.uxIntModValue.TabIndex = 1;
             this.uxIntModValue.Tag = "Intelligence_Modifier";
+            this.uxIntModValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // uxWisdomBox
             // 
@@ -521,10 +594,20 @@
             0,
             0,
             0});
+            this.uxBaseWisdom.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.uxBaseWisdom.Name = "uxBaseWisdom";
             this.uxBaseWisdom.Size = new System.Drawing.Size(38, 19);
             this.uxBaseWisdom.TabIndex = 9;
             this.uxBaseWisdom.Tag = "Base_Wisdom";
+            this.uxBaseWisdom.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label13
             // 
@@ -539,19 +622,24 @@
             // 
             this.uxWisdomSavingThrowModValue.Location = new System.Drawing.Point(162, 44);
             this.uxWisdomSavingThrowModValue.Maximum = new decimal(new int[] {
-            15,
+            20,
             0,
             0,
             0});
             this.uxWisdomSavingThrowModValue.Minimum = new decimal(new int[] {
-            15,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.uxWisdomSavingThrowModValue.Name = "uxWisdomSavingThrowModValue";
             this.uxWisdomSavingThrowModValue.Size = new System.Drawing.Size(42, 19);
             this.uxWisdomSavingThrowModValue.TabIndex = 7;
             this.uxWisdomSavingThrowModValue.Tag = "Wisdom_Saving_Throw_Modifier";
+            this.uxWisdomSavingThrowModValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label14
             // 
@@ -575,19 +663,24 @@
             // 
             this.uxWisdomModValue.Location = new System.Drawing.Point(97, 14);
             this.uxWisdomModValue.Maximum = new decimal(new int[] {
-            15,
+            20,
             0,
             0,
             0});
             this.uxWisdomModValue.Minimum = new decimal(new int[] {
-            15,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.uxWisdomModValue.Name = "uxWisdomModValue";
             this.uxWisdomModValue.Size = new System.Drawing.Size(41, 19);
             this.uxWisdomModValue.TabIndex = 1;
             this.uxWisdomModValue.Tag = "Wisdom_Modifier";
+            this.uxWisdomModValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // uxCharismaBox
             // 
@@ -613,10 +706,20 @@
             0,
             0,
             0});
+            this.uxBaseCharisma.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.uxBaseCharisma.Name = "uxBaseCharisma";
             this.uxBaseCharisma.Size = new System.Drawing.Size(38, 19);
             this.uxBaseCharisma.TabIndex = 9;
             this.uxBaseCharisma.Tag = "Base_Charisma";
+            this.uxBaseCharisma.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label16
             // 
@@ -631,19 +734,24 @@
             // 
             this.uxCharismaSavingThrowModValue.Location = new System.Drawing.Point(167, 44);
             this.uxCharismaSavingThrowModValue.Maximum = new decimal(new int[] {
-            15,
+            20,
             0,
             0,
             0});
             this.uxCharismaSavingThrowModValue.Minimum = new decimal(new int[] {
-            15,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.uxCharismaSavingThrowModValue.Name = "uxCharismaSavingThrowModValue";
             this.uxCharismaSavingThrowModValue.Size = new System.Drawing.Size(42, 19);
             this.uxCharismaSavingThrowModValue.TabIndex = 7;
             this.uxCharismaSavingThrowModValue.Tag = "Charisma_Saving_Throw_Modifier";
+            this.uxCharismaSavingThrowModValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label17
             // 
@@ -667,19 +775,24 @@
             // 
             this.uxCharismaModValue.Location = new System.Drawing.Point(102, 14);
             this.uxCharismaModValue.Maximum = new decimal(new int[] {
-            15,
+            20,
             0,
             0,
             0});
             this.uxCharismaModValue.Minimum = new decimal(new int[] {
-            15,
+            1,
             0,
             0,
-            -2147483648});
+            0});
             this.uxCharismaModValue.Name = "uxCharismaModValue";
             this.uxCharismaModValue.Size = new System.Drawing.Size(41, 19);
             this.uxCharismaModValue.TabIndex = 1;
             this.uxCharismaModValue.Tag = "Charisma_Modifier";
+            this.uxCharismaModValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // uxCreateButton
             // 
@@ -694,6 +807,8 @@
             // 
             // uxCharacterBox
             // 
+            this.uxCharacterBox.Controls.Add(this.uxLevelValue);
+            this.uxCharacterBox.Controls.Add(this.label24);
             this.uxCharacterBox.Controls.Add(this.textBox2);
             this.uxCharacterBox.Controls.Add(this.label23);
             this.uxCharacterBox.Controls.Add(this.textBox1);
@@ -704,6 +819,7 @@
             this.uxCharacterBox.Controls.Add(this.label19);
             this.uxCharacterBox.Controls.Add(this.uxInitiativeValue);
             this.uxCharacterBox.Controls.Add(this.uxProficiencyValue);
+            this.uxCharacterBox.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxCharacterBox.Location = new System.Drawing.Point(12, 242);
             this.uxCharacterBox.Name = "uxCharacterBox";
             this.uxCharacterBox.Size = new System.Drawing.Size(245, 184);
@@ -713,10 +829,10 @@
             // 
             // uxCharacterName
             // 
-            this.uxCharacterName.Location = new System.Drawing.Point(97, 16);
+            this.uxCharacterName.Location = new System.Drawing.Point(91, 16);
             this.uxCharacterName.MaxLength = 200;
             this.uxCharacterName.Name = "uxCharacterName";
-            this.uxCharacterName.Size = new System.Drawing.Size(143, 20);
+            this.uxCharacterName.Size = new System.Drawing.Size(143, 19);
             this.uxCharacterName.TabIndex = 16;
             this.uxCharacterName.Tag = "Character_Name";
             // 
@@ -725,7 +841,7 @@
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(7, 19);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(84, 13);
+            this.label21.Size = new System.Drawing.Size(78, 12);
             this.label21.TabIndex = 15;
             this.label21.Text = "Character Name";
             // 
@@ -734,16 +850,16 @@
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(7, 156);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(86, 13);
+            this.label20.Size = new System.Drawing.Size(86, 12);
             this.label20.TabIndex = 14;
             this.label20.Text = "Initiative Modifier";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 122);
+            this.label19.Location = new System.Drawing.Point(6, 129);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(99, 13);
+            this.label19.Size = new System.Drawing.Size(96, 12);
             this.label19.TabIndex = 13;
             this.label19.Text = "Proficiency Modifier";
             // 
@@ -761,13 +877,13 @@
             0,
             -2147483648});
             this.uxInitiativeValue.Name = "uxInitiativeValue";
-            this.uxInitiativeValue.Size = new System.Drawing.Size(42, 20);
+            this.uxInitiativeValue.Size = new System.Drawing.Size(42, 19);
             this.uxInitiativeValue.TabIndex = 12;
             this.uxInitiativeValue.Tag = "Initiative_Modifier";
             // 
             // uxProficiencyValue
             // 
-            this.uxProficiencyValue.Location = new System.Drawing.Point(111, 120);
+            this.uxProficiencyValue.Location = new System.Drawing.Point(108, 127);
             this.uxProficiencyValue.Maximum = new decimal(new int[] {
             15,
             0,
@@ -779,7 +895,7 @@
             0,
             -2147483648});
             this.uxProficiencyValue.Name = "uxProficiencyValue";
-            this.uxProficiencyValue.Size = new System.Drawing.Size(42, 20);
+            this.uxProficiencyValue.Size = new System.Drawing.Size(42, 19);
             this.uxProficiencyValue.TabIndex = 12;
             this.uxProficiencyValue.Tag = "Proficiency_Modifier";
             // 
@@ -803,6 +919,7 @@
             // uxSelectSavingThrowsProficiencies
             // 
             this.uxSelectSavingThrowsProficiencies.Controls.Add(this.uxSavingThrowsChecklist);
+            this.uxSelectSavingThrowsProficiencies.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxSelectSavingThrowsProficiencies.Location = new System.Drawing.Point(263, 242);
             this.uxSelectSavingThrowsProficiencies.Name = "uxSelectSavingThrowsProficiencies";
             this.uxSelectSavingThrowsProficiencies.Size = new System.Drawing.Size(121, 184);
@@ -813,6 +930,7 @@
             // uxCharacterProficiencies
             // 
             this.uxCharacterProficiencies.Controls.Add(this.uxProficiencyChecklist);
+            this.uxCharacterProficiencies.Font = new System.Drawing.Font("Footlight MT Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxCharacterProficiencies.Location = new System.Drawing.Point(390, 242);
             this.uxCharacterProficiencies.Name = "uxCharacterProficiencies";
             this.uxCharacterProficiencies.Size = new System.Drawing.Size(370, 184);
@@ -847,42 +965,68 @@
             this.uxProficiencyChecklist.Location = new System.Drawing.Point(6, 19);
             this.uxProficiencyChecklist.MultiColumn = true;
             this.uxProficiencyChecklist.Name = "uxProficiencyChecklist";
-            this.uxProficiencyChecklist.Size = new System.Drawing.Size(341, 150);
+            this.uxProficiencyChecklist.Size = new System.Drawing.Size(341, 154);
             this.uxProficiencyChecklist.TabIndex = 15;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(45, 50);
+            this.textBox1.Location = new System.Drawing.Point(41, 44);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 20);
+            this.textBox1.Size = new System.Drawing.Size(143, 19);
             this.textBox1.TabIndex = 18;
             this.textBox1.Tag = "Character_Name";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(7, 53);
+            this.label22.Location = new System.Drawing.Point(7, 47);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(32, 13);
+            this.label22.Size = new System.Drawing.Size(28, 12);
             this.label22.TabIndex = 17;
             this.label22.Text = "Class";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(56, 84);
+            this.textBox2.Location = new System.Drawing.Point(51, 73);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 20);
+            this.textBox2.Size = new System.Drawing.Size(143, 19);
             this.textBox2.TabIndex = 20;
             this.textBox2.Tag = "Character_Name";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(6, 87);
+            this.label23.Location = new System.Drawing.Point(7, 76);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(44, 13);
+            this.label23.Size = new System.Drawing.Size(38, 12);
             this.label23.TabIndex = 19;
             this.label23.Text = "Race(s)";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(7, 106);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(28, 12);
+            this.label24.TabIndex = 21;
+            this.label24.Text = "Level";
+            // 
+            // uxLevelValue
+            // 
+            this.uxLevelValue.Location = new System.Drawing.Point(39, 104);
+            this.uxLevelValue.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.uxLevelValue.Name = "uxLevelValue";
+            this.uxLevelValue.Size = new System.Drawing.Size(46, 19);
+            this.uxLevelValue.TabIndex = 22;
+            this.uxLevelValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // uxCreateCharacterProfile
             // 
@@ -938,6 +1082,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.uxProficiencyValue)).EndInit();
             this.uxSelectSavingThrowsProficiencies.ResumeLayout(false);
             this.uxCharacterProficiencies.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.uxLevelValue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1004,5 +1149,7 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.NumericUpDown uxLevelValue;
+        private System.Windows.Forms.Label label24;
     }
 }

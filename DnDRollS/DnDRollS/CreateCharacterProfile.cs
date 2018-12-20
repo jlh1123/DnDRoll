@@ -94,6 +94,7 @@ namespace DnDRollS
                     _txtFile[i] = _extraItems[_extraKeys[i]];
                 }
             }
+            for(int j = 0; j < _cpro)
         }
 
         private void CreateCharacterFile()

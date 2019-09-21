@@ -28,27 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.uxTextbox1 = new System.Windows.Forms.TextBox();
             this.uxLoadCharacter = new System.Windows.Forms.Button();
             this.uxCreateNewCharacter = new System.Windows.Forms.Button();
-            this.uxTextbox2 = new System.Windows.Forms.TextBox();
+            this.uxTextbox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // uxTextbox1
-            // 
-            this.uxTextbox1.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxTextbox1.Location = new System.Drawing.Point(12, 12);
-            this.uxTextbox1.Name = "uxTextbox1";
-            this.uxTextbox1.ReadOnly = true;
-            this.uxTextbox1.Size = new System.Drawing.Size(646, 24);
-            this.uxTextbox1.TabIndex = 0;
-            this.uxTextbox1.Text = "Please load in your character\'s text file to use their stats for your rolls";
-            this.uxTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // uxLoadCharacter
             // 
             this.uxLoadCharacter.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxLoadCharacter.Location = new System.Drawing.Point(12, 80);
+            this.uxLoadCharacter.Location = new System.Drawing.Point(12, 53);
             this.uxLoadCharacter.Name = "uxLoadCharacter";
             this.uxLoadCharacter.Size = new System.Drawing.Size(317, 76);
             this.uxLoadCharacter.TabIndex = 1;
@@ -58,7 +46,7 @@
             // uxCreateNewCharacter
             // 
             this.uxCreateNewCharacter.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxCreateNewCharacter.Location = new System.Drawing.Point(335, 80);
+            this.uxCreateNewCharacter.Location = new System.Drawing.Point(335, 53);
             this.uxCreateNewCharacter.Name = "uxCreateNewCharacter";
             this.uxCreateNewCharacter.Size = new System.Drawing.Size(323, 76);
             this.uxCreateNewCharacter.TabIndex = 2;
@@ -66,24 +54,23 @@
             this.uxCreateNewCharacter.UseVisualStyleBackColor = true;
             this.uxCreateNewCharacter.Click += new System.EventHandler(this.uxCreateNewCharacter_Click);
             // 
-            // uxTextbox2
+            // uxTextbox1
             // 
-            this.uxTextbox2.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxTextbox2.Location = new System.Drawing.Point(12, 42);
-            this.uxTextbox2.Name = "uxTextbox2";
-            this.uxTextbox2.ReadOnly = true;
-            this.uxTextbox2.Size = new System.Drawing.Size(646, 24);
-            this.uxTextbox2.TabIndex = 3;
-            this.uxTextbox2.Text = "Create a new profile if you do not have a txt file for your desired character.";
-            this.uxTextbox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.uxTextbox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.uxTextbox1.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxTextbox1.Location = new System.Drawing.Point(-4, 21);
+            this.uxTextbox1.Name = "uxTextbox1";
+            this.uxTextbox1.Size = new System.Drawing.Size(646, 17);
+            this.uxTextbox1.TabIndex = 0;
+            this.uxTextbox1.Text = "Please load your character\'s txt file or create a new character profile.\r\n";
+            this.uxTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // uxLoadCharacterScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(670, 169);
-            this.Controls.Add(this.uxTextbox2);
+            this.ClientSize = new System.Drawing.Size(670, 144);
             this.Controls.Add(this.uxCreateNewCharacter);
             this.Controls.Add(this.uxLoadCharacter);
             this.Controls.Add(this.uxTextbox1);
@@ -96,11 +83,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox uxTextbox1;
         private System.Windows.Forms.Button uxLoadCharacter;
         private System.Windows.Forms.Button uxCreateNewCharacter;
-        private System.Windows.Forms.TextBox uxTextbox2;
+        private System.Windows.Forms.TextBox uxTextbox1;
     }
 }
 

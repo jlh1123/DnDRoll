@@ -73,6 +73,12 @@
             this.uxCharismaModValue = new System.Windows.Forms.NumericUpDown();
             this.uxCreateButton = new System.Windows.Forms.Button();
             this.uxCharacterBox = new System.Windows.Forms.GroupBox();
+            this.uxLevelValue = new System.Windows.Forms.NumericUpDown();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
             this.uxCharacterName = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -84,12 +90,6 @@
             this.uxSelectSavingThrowsProficiencies = new System.Windows.Forms.GroupBox();
             this.uxCharacterProficiencies = new System.Windows.Forms.GroupBox();
             this.uxProficiencyChecklist = new System.Windows.Forms.CheckedListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.uxLevelValue = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.uxStrengthModValue)).BeginInit();
             this.uxStrengthBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uxBaseStrength)).BeginInit();
@@ -115,11 +115,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.uxCharismaSavingThrowModValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxCharismaModValue)).BeginInit();
             this.uxCharacterBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uxLevelValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxInitiativeValue)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxProficiencyValue)).BeginInit();
             this.uxSelectSavingThrowsProficiencies.SuspendLayout();
             this.uxCharacterProficiencies.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uxLevelValue)).BeginInit();
             this.SuspendLayout();
             // 
             // uxText1
@@ -827,6 +827,66 @@
             this.uxCharacterBox.TabStop = false;
             this.uxCharacterBox.Text = "Character Stats";
             // 
+            // uxLevelValue
+            // 
+            this.uxLevelValue.Location = new System.Drawing.Point(39, 104);
+            this.uxLevelValue.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.uxLevelValue.Name = "uxLevelValue";
+            this.uxLevelValue.Size = new System.Drawing.Size(46, 19);
+            this.uxLevelValue.TabIndex = 22;
+            this.uxLevelValue.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(7, 106);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(28, 12);
+            this.label24.TabIndex = 21;
+            this.label24.Text = "Level";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(51, 73);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(143, 19);
+            this.textBox2.TabIndex = 20;
+            this.textBox2.Tag = "Character_Name";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(7, 76);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(38, 12);
+            this.label23.TabIndex = 19;
+            this.label23.Text = "Race(s)";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(41, 44);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(143, 19);
+            this.textBox1.TabIndex = 18;
+            this.textBox1.Tag = "Character_Name";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(7, 47);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(28, 12);
+            this.label22.TabIndex = 17;
+            this.label22.Text = "Class";
+            // 
             // uxCharacterName
             // 
             this.uxCharacterName.Location = new System.Drawing.Point(91, 16);
@@ -903,6 +963,7 @@
             // 
             this.uxSavingThrowsChecklist.BackColor = System.Drawing.SystemColors.Control;
             this.uxSavingThrowsChecklist.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.uxSavingThrowsChecklist.CheckOnClick = true;
             this.uxSavingThrowsChecklist.FormattingEnabled = true;
             this.uxSavingThrowsChecklist.Items.AddRange(new object[] {
             "Strength",
@@ -913,7 +974,7 @@
             "Charisma"});
             this.uxSavingThrowsChecklist.Location = new System.Drawing.Point(8, 34);
             this.uxSavingThrowsChecklist.Name = "uxSavingThrowsChecklist";
-            this.uxSavingThrowsChecklist.Size = new System.Drawing.Size(101, 135);
+            this.uxSavingThrowsChecklist.Size = new System.Drawing.Size(101, 126);
             this.uxSavingThrowsChecklist.TabIndex = 12;
             // 
             // uxSelectSavingThrowsProficiencies
@@ -942,6 +1003,7 @@
             // 
             this.uxProficiencyChecklist.BackColor = System.Drawing.SystemColors.Control;
             this.uxProficiencyChecklist.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.uxProficiencyChecklist.CheckOnClick = true;
             this.uxProficiencyChecklist.FormattingEnabled = true;
             this.uxProficiencyChecklist.Items.AddRange(new object[] {
             "Acrobatics",
@@ -967,66 +1029,6 @@
             this.uxProficiencyChecklist.Name = "uxProficiencyChecklist";
             this.uxProficiencyChecklist.Size = new System.Drawing.Size(341, 154);
             this.uxProficiencyChecklist.TabIndex = 15;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(41, 44);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 19);
-            this.textBox1.TabIndex = 18;
-            this.textBox1.Tag = "Character_Name";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(7, 47);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(28, 12);
-            this.label22.TabIndex = 17;
-            this.label22.Text = "Class";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(51, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(143, 19);
-            this.textBox2.TabIndex = 20;
-            this.textBox2.Tag = "Character_Name";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(7, 76);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(38, 12);
-            this.label23.TabIndex = 19;
-            this.label23.Text = "Race(s)";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(7, 106);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(28, 12);
-            this.label24.TabIndex = 21;
-            this.label24.Text = "Level";
-            // 
-            // uxLevelValue
-            // 
-            this.uxLevelValue.Location = new System.Drawing.Point(39, 104);
-            this.uxLevelValue.Maximum = new decimal(new int[] {
-            20,
-            0,
-            0,
-            0});
-            this.uxLevelValue.Name = "uxLevelValue";
-            this.uxLevelValue.Size = new System.Drawing.Size(46, 19);
-            this.uxLevelValue.TabIndex = 22;
-            this.uxLevelValue.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // uxCreateCharacterProfile
             // 
@@ -1078,11 +1080,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.uxCharismaModValue)).EndInit();
             this.uxCharacterBox.ResumeLayout(false);
             this.uxCharacterBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uxLevelValue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxInitiativeValue)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxProficiencyValue)).EndInit();
             this.uxSelectSavingThrowsProficiencies.ResumeLayout(false);
             this.uxCharacterProficiencies.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.uxLevelValue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

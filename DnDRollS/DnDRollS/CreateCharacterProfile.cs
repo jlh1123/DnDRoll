@@ -76,14 +76,7 @@ namespace DnDRollS
         {
             CreateCharacterFile();
 
-            using (StreamWriter sw = new StreamWriter(Filename))
-            {
-                for(int a = 0; a < _txtFile.Length; a++)
-                {
-                    sw.WriteLine(_txtFile[a]);
-                }
-            }
-            uxCreateCharacterProfile.ActiveForm.Close();
+            
             
         }
         
@@ -123,7 +116,15 @@ namespace DnDRollS
             save.ShowDialog();
             uxLoadCharacterScreen.ActiveForm.Close();
             Filename = save.FileName;
-            StreamWriter sr = new StreamWriter((profFolderAddress + Filename));
+            CheckForFolder();
+            using (StreamWriter sw = new StreamWriter(Filename))
+            {
+                for (int a = 0; a < _txtFile.Length; a++)
+                {
+                    sw.WriteLine(_txtFile[a]);
+                }
+            }
+            uxCreateCharacterProfile.ActiveForm.Close();
         }
 
         private void CheckForFolder()
@@ -138,7 +139,5 @@ namespace DnDRollS
             profFolderAddress = folderFind;
 
         }
-
-
     }//end class
 }//end namespace

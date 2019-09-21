@@ -21,6 +21,8 @@ namespace DnDRollS
 
         private string[] _extraKeys = new string[6];
 
+        private string profFolderAddress;
+
         private Dictionary<string, int> _dictionary = new Dictionary<string, int>();
 
         private Dictionary<string, string> _extraItems = new Dictionary<string, string>();
@@ -65,21 +67,23 @@ namespace DnDRollS
                     _CProf.Add(uxProficiencyChecklist.Items[i].ToString(), "");
                 }
             }
-
-
+            
         }
 
         
 
         private void uxCreateButton_Click(object sender, EventArgs e)
-        { 
+        {
+            CreateCharacterFile();
+
             using (StreamWriter sw = new StreamWriter(Filename))
             {
                 for(int a = 0; a < _txtFile.Length; a++)
                 {
-                    sw.WriteLine(e);
+                    sw.WriteLine(_txtFile[a]);
                 }
             }
+            uxCreateCharacterProfile.ActiveForm.Close();
             
         }
         
@@ -117,9 +121,24 @@ namespace DnDRollS
             SaveFileDialog save = new SaveFileDialog();
             save.Filter = "Text Files (*.txt)|*.txt";
             save.ShowDialog();
+            uxLoadCharacterScreen.ActiveForm.Close();
             Filename = save.FileName;
-
-        
+            StreamWriter sr = new StreamWriter((profFolderAddress + Filename));
         }
+
+        private void CheckForFolder()
+        {
+
+            String currentDirectory = Directory.GetCurrentDirectory();
+            String folderFind = currentDirectory + "/CharacterProfilesFolder";
+            if(Directory.Exists(folderFind) == false)
+            {
+                Directory.CreateDirectory(folderFind);
+            }
+            profFolderAddress = folderFind;
+
+        }
+
+
     }//end class
 }//end namespace
